@@ -1,0 +1,2 @@
+include ':app', ':android_yuekao', ':android_mvp', ':day02ri'
+include ':library'
