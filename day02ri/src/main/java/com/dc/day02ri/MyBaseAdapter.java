@@ -73,6 +73,7 @@ public class MyBaseAdapter extends BaseAdapter {
                 convertView.setTag(holder);
             }else{
                 holder = (ViewHolder) convertView.getTag();
+                //
             }
             holder.tv_title.setText(list.get(position).getTitle());
             holder.tv_price.setText(list.get(position).getBargainPrice());
