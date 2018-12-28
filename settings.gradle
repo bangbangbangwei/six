@@ -1,2 +1,2 @@
-include ':app', ':android_yuekao', ':android_mvp', ':day02ri'
+include ':app', ':android_mvp', ':android_mvp_one', ':android_mvplinian'
 include ':library'

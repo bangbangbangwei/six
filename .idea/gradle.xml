@@ -9,9 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android_mvp" />
-            <option value="$PROJECT_DIR$/android_yuekao" />
+            <option value="$PROJECT_DIR$/android_mvp_one" />
+            <option value="$PROJECT_DIR$/android_mvplinian" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/day02ri" />
             <option value="$PROJECT_DIR$/library" />
           </set>
         </option>
