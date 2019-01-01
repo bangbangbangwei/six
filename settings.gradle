@@ -1,2 +1,1 @@
-include ':app', ':android_mvp', ':android_mvp_one', ':android_mvplinian'
-include ':library'
+include ':app', ':android_zhoulian2', ':android_zhoulian3', ':android_zhoulian32'

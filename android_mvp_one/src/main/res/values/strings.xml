@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">Android_mvp_one</string>
-    <string name="mobile">请输入用户名</string>
-    <string name="pwd">请输入密码</string>
-</resources>

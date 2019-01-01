@@ -5,7 +5,6 @@ buildscript {
     repositories {
         google()
         jcenter()
-
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
@@ -20,8 +19,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "https://jitpack.io" }
-        maven { url "https://oss.sonatype.org/content/repositories/ksoap2-android-releases/" }
+        maven { url 'https://jitpack.io' }
     }
 }
 
