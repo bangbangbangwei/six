@@ -8,10 +8,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Kuwei20190102" />
             <option value="$PROJECT_DIR$/android_zhoulian2" />
             <option value="$PROJECT_DIR$/android_zhoulian3" />
             <option value="$PROJECT_DIR$/android_zhoulian32" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/kouwei20190102" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

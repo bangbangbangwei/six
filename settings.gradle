@@ -1,1 +1,1 @@
-include ':app', ':android_zhoulian2', ':android_zhoulian3', ':android_zhoulian32'
+include ':app', ':android_zhoulian2', ':android_zhoulian3', ':android_zhoulian32', ':Kuwei20190102', ':kouwei20190102'
