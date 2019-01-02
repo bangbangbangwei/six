@@ -3,15 +3,18 @@ package com.dc.kouwei20190102.bean;
 import java.util.ArrayList;
 
 public class HttpBean {
-    public ArrayList<Data> data;
+    public Data data;
 
-    public void setData(ArrayList<Data> data) {
-        this.data = data;
-    }
 
     public class Data{
-        public double bargainPrice;
-        public String images;
-        public String title;
+        public Miaosha miaosha;
+        public class Miaosha{
+            public ArrayList<List> list;
+                public class List{
+                    public int bargainPrice;
+                    public String images;
+                    public String title;
+                }
+        }
     }
 }

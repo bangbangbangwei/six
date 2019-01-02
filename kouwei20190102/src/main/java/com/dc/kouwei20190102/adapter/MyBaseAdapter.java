@@ -16,14 +16,14 @@ import java.util.ArrayList;
 
 public class MyBaseAdapter extends BaseAdapter {
     Context context;
-    ArrayList<HttpBean.Data> list;
+    ArrayList<HttpBean.Data.Miaosha.List> list;
 
     public MyBaseAdapter(Context context) {
         this.context = context;
         list = new ArrayList<>();
     }
 
-    public void setList(ArrayList<HttpBean.Data> list) {
+    public void setList(ArrayList<HttpBean.Data.Miaosha.List> list) {
         this.list = list;
         notifyDataSetChanged();
     }

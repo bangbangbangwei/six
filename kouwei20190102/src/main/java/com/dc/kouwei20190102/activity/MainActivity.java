@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity implements Contract.iJsonVie
     private JsonPresenter jsonPresenter;
     private MyBaseAdapter myBaseAdapter;
     private HashMap<String, String> params;
-    int pid = 21;
-    private ArrayList<HttpBean.Data> data;
+    private ArrayList<HttpBean.Data.Miaosha.List> data;
 
     /**
      * 10:44
@@ -52,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements Contract.iJsonVie
         myBaseAdapter = new MyBaseAdapter(this);
         gv.setAdapter(myBaseAdapter);
         params = new HashMap<>();
-        params.put("pid",pid+"");
+        params.put("tuijian","推荐");
         jsonPresenter.goJson(UserApi.path,params);
     }
 
@@ -67,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements Contract.iJsonVie
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(MainActivity.this, LogActivity.class);
                 intent.putExtra("name",data.get(position).title);
-                intent.putExtra("price",data.get(position).bargainPrice);
+                intent.putExtra("price",data.get(position).bargainPrice+"");
                 intent.putExtra("img",data.get(position).images);
                 startActivity(intent);
             }
@@ -89,8 +88,8 @@ public class MainActivity extends AppCompatActivity implements Contract.iJsonVie
     @Override
     public void success(String res) {
         HttpBean httpBean = new Gson().fromJson(res, HttpBean.class);
-        data = httpBean.data;
-        myBaseAdapter.setList(data);
+        data = httpBean.data.miaosha.list;
+        myBaseAdapter.setList(this.data);
     }
 
     @Override
